@@ -13,6 +13,7 @@ import { SidebarBottomComponent } from './parts/sidebar-bottom/sidebar-bottom.co
 import { ActivityComponent } from './components/activity/activity.component';
 import { ChannelsComponent } from './components/channels/channels.component';
 import { SidebarTitleComponent } from './components/sidebar-title/sidebar-title.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SidebarTitleComponent } from './components/sidebar-title/sidebar-title.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
-<app-sidebar-title title="Activity" show="View timeline / Filter activitie"></app-sidebar-title>
-<app-activity></app-activity>
-<app-activity></app-activity>
-<app-activity></app-activity>
+<div class="sidebar-top">
+  <app-sidebar-title title="Activity" show="View timeline / Filter activitie"></app-sidebar-title>
+  <app-activity *ngFor="let a of activity" name={{a.owner.firstName}} msg={{a.message}} pic={{a.owner.picture}}>
+  </app-activity>
+</div>

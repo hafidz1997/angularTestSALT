@@ -1,0 +1,13 @@
+.sidebar-bottom{
+    border-bottom: 1px solid #F4E3CF;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper > app-channels {
+    margin: 6px;
+  }
