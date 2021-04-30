@@ -8,6 +8,11 @@ import { HeaderComponent } from './parts/header/header.component';
 import { FooterComponent } from './parts/footer/footer.component';
 import { GalleryComponent } from './parts/gallery/gallery.component';
 import { SubImageComponent } from './components/sub-image/sub-image.component';
+import { SidebarTopComponent } from './parts/sidebar-top/sidebar-top.component';
+import { SidebarBottomComponent } from './parts/sidebar-bottom/sidebar-bottom.component';
+import { ActivityComponent } from './components/activity/activity.component';
+import { ChannelsComponent } from './components/channels/channels.component';
+import { SidebarTitleComponent } from './components/sidebar-title/sidebar-title.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { SubImageComponent } from './components/sub-image/sub-image.component';
     HeaderComponent,
     FooterComponent,
     GalleryComponent,
-    SubImageComponent
+    SubImageComponent,
+    SidebarTopComponent,
+    SidebarBottomComponent,
+    ActivityComponent,
+    ChannelsComponent,
+    SidebarTitleComponent
   ],
   imports: [
     BrowserModule,

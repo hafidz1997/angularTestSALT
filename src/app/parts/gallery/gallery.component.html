@@ -4,7 +4,7 @@
     <a href="#" class="show">{{show}}</a>
   </div>
   <div class="content col-md-12 p-0">
-    <div class="row no-gutters">
+    <div class="row no-gutters pb-2">
       <div class="main-image">
         <img class="big-image" src="/assets/img/placeholder.png" alt="placeholder">
         <div class="text">
@@ -15,15 +15,27 @@
           </div>
         </div>
       </div>
-      <div class="col">
+      <div class="col r-img">
         <app-sub-image></app-sub-image>
         <app-sub-image></app-sub-image>
       </div>
     </div>
-    <div class="row no-gutters">
-      <div class="col-md-8 d-flex b-img">
+    <div class="row no-gutters pr-md-2">
+      <div class="col-md-12 b-img">
         <app-sub-image></app-sub-image>
         <app-sub-image></app-sub-image>
+        <div class="upload-btn" (click)="fileInput.click()">
+          <input #fileInput type="file" />
+          <i class="fas fa-arrow-circle-up"></i>
+          <div>
+            <p class="upload-txt">
+              Upload
+            </p>
+            <p class="upload-txt">
+              Your Own Video
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

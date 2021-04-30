@@ -1,49 +1,90 @@
+.head {
+  padding: 8px 35px 8px 0px;
+  padding-left: 0;
+  padding-right: 35px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #F4E3CF;
+}
 
-h2{
-    color: #F4E3CF;
+h2 {
+
+  font-size: 24px;
+}
+
+.main-image {
+  margin-right: 10px;
+  width: 470px;
+  height: 350px;
+  position: relative;
+  color: #953E46;
+  font-weight: bold;
+
+  .big-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  h3 {
     font-size: 24px;
-}
-.head{
-    padding-left: 0;
-    padding-right: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.show{
-    color: #F4E3CF;
-}
-.main-image{
-    margin-bottom: 10px;
-    margin-right: 10px;
-    width: 470px;
-    height: 350px;
-    position: relative;
-    color: #953E46;
-    font-weight: bold;
-    .big-image{
-        width: 100%;
-        height: 100%;
-    }
-    .text{
-        width: 100%;
-        padding: 10px;
-        position: absolute;
-        bottom: 0;
-        .bottom{
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-    p{
-        margin: 0px;
-    }
-    h3{
-        font-size: 24px;
-    }
+  }
 }
 
-.b-img{
-    justify-content: space-between;
-    padding-right: 25px;
+.b-img {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.r-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.upload {
+  &-btn {
+    width: 225px;
+    height: 170px;
+    border: 1px solid #F4E3CF;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F4E3CF;
+    cursor: pointer;
+
+    i {
+      font-size: 30px;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  &-txt {
+    width: 100px;
+    margin-bottom: 0;
+    margin-left: 5px;
+  }
+
 }
